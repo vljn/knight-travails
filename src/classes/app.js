@@ -21,8 +21,7 @@ class App {
       !this.running &&
       this.startSquare !== null &&
       this.endSquare !== null &&
-      this.startSquare.x !== this.endSquare.x &&
-      this.startSquare.y !== this.endSquare.y
+      (this.startSquare.x !== this.endSquare.x || this.startSquare.y !== this.endSquare.y)
     ) {
       const moves = knightMoves(
         this.startSquare.x,
@@ -30,7 +29,7 @@ class App {
         this.endSquare.x,
         this.endSquare.y
       );
-
+      console.log(moves);
       DOMstuff.animate(moves, this);
     }
   }
