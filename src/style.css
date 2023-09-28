@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Glockenspiel;
+  src: url('./fonts/LT\ Glockenspiel\ Black.ttf');
+}
+
+@font-face {
+  font-family: Coolvetica;
+  src: url('./fonts/coolvetica\ rg.otf');
+}
+
+@font-face {
+  font-family: Altersan;
+  src: url('./fonts/AltersanTrial-Regular.ttf');
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #caa776;
+}
