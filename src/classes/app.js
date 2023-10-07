@@ -29,7 +29,6 @@ class App {
         this.endSquare.x,
         this.endSquare.y
       );
-      console.log(moves);
       DOMstuff.animate(moves, this);
     }
   }
